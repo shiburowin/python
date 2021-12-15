@@ -1,0 +1,642 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "21112021.ipynb",
+      "provenance": []
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "v9AwqG-A7OF1"
+      },
+      "source": [
+        "Twinkle, twinkle, little star,\n",
+        "\tHow I wonder what you are! \n",
+        "\t\tUp above the world so high,   \t\t\n",
+        "\t\tLike a diamond in the sky. \n",
+        "Twinkle, twinkle, little star, \n",
+        "\tHow I wonder what you are"
+      ],
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "EXEcTfWB7Yop",
+        "outputId": "456c2379-2544-48fa-c76f-7ea9ee2c3a6c"
+      },
+      "source": [
+        "print(\"Twinkle, twinkle, little star, \\n\\tHow I wonder what you are! \\n\\t\\tUp above the world so high, \\n\\t\\tLike a diamond in the sky. \\nTwinkle, twinkle, little star, \\n\\tHow I wonder what you are!\")\n"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Twinkle, twinkle, little star, \n",
+            "\tHow I wonder what you are! \n",
+            "\t\tUp above the world so high, \n",
+            "\t\tLike a diamond in the sky. \n",
+            "Twinkle, twinkle, little star, \n",
+            "\tHow I wonder what you are!\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "NR0xgXg1D1SQ",
+        "outputId": "f89a362d-5d79-4c79-9a33-32f98bdae982"
+      },
+      "source": [
+        "print(\"GIM\")"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "GIM\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "ktYppETX7m9y"
+      },
+      "source": [
+        "Python program to get the Python version "
+      ],
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "hxuTqv337oaj",
+        "outputId": "8b496701-3f76-4d1f-bd28-ccff1e630bc9"
+      },
+      "source": [
+        "import sys\n",
+        "print(\"Python version\")\n",
+        "print (sys.version)\n",
+        "print(\"Version info.\")\n",
+        "print (sys.version_info)"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Python version\n",
+            "3.7.12 (default, Sep 10 2021, 00:21:48) \n",
+            "[GCC 7.5.0]\n",
+            "Version info.\n",
+            "sys.version_info(major=3, minor=7, micro=12, releaselevel='final', serial=0)\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "l0Tf-4447zrQ"
+      },
+      "source": [
+        "Python program to display the current date and time"
+      ],
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "ehU8NzSu70i-",
+        "outputId": "357da58b-e243-4d40-aa57-892ba266fa6c"
+      },
+      "source": [
+        "import datetime\n",
+        "now = datetime.datetime.now()\n",
+        "print (\"Current date and time : \")\n",
+        "print (now.strftime(\"%Y-%m-%d %H:%M:%S\"))\n"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Current date and time : \n",
+            "2021-11-21 06:11:53\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "jp_ik3cC75YO"
+      },
+      "source": [
+        "Python program which accepts the radius of a circle from the user and compute the area."
+      ],
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "FKP5mRwD8CIQ",
+        "outputId": "4861b08e-1eb9-4c0e-aae2-6710de1e1ae8"
+      },
+      "source": [
+        "from math import pi\n",
+        "r = float(input (\"Input the radius of the circle : \"))\n",
+        "print (\"The area of the circle with radius \" + str(r) + \" is: \" + str(pi * r**2))"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Input the radius of the circle : 3.7\n",
+            "The area of the circle with radius 3.7 is: 43.008403427644275\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "C9ZNijIPJpV-",
+        "outputId": "0d077357-ed8b-45b0-a45a-7dfb6d68fdba"
+      },
+      "source": [
+        "a=int(input(\"Enter a value\"))\n",
+        "b=int(input(\"Enter b value\"))\n",
+        "c=a+b\n",
+        "print(c)"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter a value8\n",
+            "Enter b value9\n",
+            "17\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "YL-2IVuy8HLq"
+      },
+      "source": [
+        " Python program which accepts the user's first and last name and print them in reverse order with a space between them"
+      ],
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "L2dWgk6I8V7K",
+        "outputId": "72b9007c-575c-4b8f-cc20-ff2f1ea87f35"
+      },
+      "source": [
+        "fname = input(\"Input your First Name : \")\n",
+        "lname = input(\"Input your Last Name : \")\n",
+        "print (\"Hello  \" + lname + \" \" + fname)\n"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Input your First Name : Tamil\n",
+            "Input your Last Name : Murugan\n",
+            "Hello  Murugan Tamil\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "6csp75ct8fUL"
+      },
+      "source": [
+        "Python program which accepts a sequence of comma-separated numbers from user and generate a list and a tuple with those numbers."
+      ],
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "DBbdfeJh8jPz"
+      },
+      "source": [
+        "values = input(\"Input some comma seprated numbers : \")\n",
+        "list = values.split(\",\")\n",
+        "#tuple = tuple(list)\n",
+        "print('List : ',list)\n",
+        "\n"
+      ],
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "pnDdKVvz8r7d"
+      },
+      "source": [
+        "a Python program to accept a filename from the user and print the extension of that"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "yFhPjkja8ykd",
+        "outputId": "646b1d3d-df89-43f9-9cd1-baa48a30d0df"
+      },
+      "source": [
+        "filename = input(\"Input the Filename: \")\n",
+        "f_extns = filename.split(\".\")\n",
+        "print (\"The extension of the file is : \" + repr(f_extns[-1]))"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Input the Filename: abc.java.txt\n",
+            "The extension of the file is : 'txt'\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "xj4eOKPJ8_FC"
+      },
+      "source": [
+        "Python program to display the first and last colors from the following list"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "8esLMs058_8A",
+        "outputId": "77c7b6be-7feb-4287-f4f7-531eba22fb72"
+      },
+      "source": [
+        "color_list = [\"Red\",\"Green\",\"White\" ,\"Black\"]\n",
+        "print( \"%s %s\"%(color_list[0],color_list[-1]))"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Red Black\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "pc2S1Ujq-Aio",
+        "outputId": "195ebc18-7788-437c-8db4-71fa845b544a"
+      },
+      "source": [
+        "def my_function():\n",
+        "  print(\"Hello from a function\")\n",
+        "\n",
+        "my_function()"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Hello from a function\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "tBhm6LLjQe1b",
+        "outputId": "2760dbc8-0a5d-4511-948f-17f7f60df090"
+      },
+      "source": [
+        "def myname():\n",
+        "  print(\"TamilMurugan\")\n",
+        "\n",
+        "myname()"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "TamilMurugan\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "qeThcz19-hd8",
+        "outputId": "6d2af58f-817d-41c9-e206-8ba9e519aad6"
+      },
+      "source": [
+        "def my_function(fname):\n",
+        "  print(fname + \" Refsnes\")\n",
+        "\n",
+        "my_function(\"Emil\")\n",
+        "my_function(\"Tobias\")\n",
+        "my_function(\"Linus\")"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Emil Refsnes\n",
+            "Tobias Refsnes\n",
+            "Linus Refsnes\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "c3krSoIv-m0u",
+        "outputId": "4e3def5f-f43d-49ec-abbb-b55e54ad9e09"
+      },
+      "source": [
+        "def my_function(fname, lname):\n",
+        "  print(fname + \" \" + lname)\n",
+        "\n",
+        "my_function(\"Emil\", \"Refsnes\")"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Emil Refsnes\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "ICe5Vp7l-r7G",
+        "outputId": "6856848b-3fc5-4574-8453-719a8e3b26fd"
+      },
+      "source": [
+        "def my_function(*kids):\n",
+        "  print(\"The youngest child is \" + kids[2])\n",
+        "\n",
+        "my_function(\"Emil\", \"Tobias\", \"Linus\")"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "The youngest child is Linus\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "vDh6QEDF-vEu",
+        "outputId": "93a70235-d67f-42d0-c2dc-6fcffdd8a16a"
+      },
+      "source": [
+        "def my_function(child3, child2, child1):\n",
+        "  print(\"The youngest child is \" + child3)\n",
+        "\n",
+        "my_function(child1 = \"Emil\", child2 = \"Tobias\", child3 = \"Linus\")"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "The youngest child is Linus\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "om9TR2GI-2k5",
+        "outputId": "a10229b7-6a1a-4a5a-a987-93852336a612"
+      },
+      "source": [
+        "def my_function(**kid):\n",
+        "  print(\"His last name is \" + kid[\"lname\"])\n",
+        "\n",
+        "my_function(fname = \"Tobias\", lname = \"Refsnes\")"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "His last name is Refsnes\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "jUsfMvQU-7uJ",
+        "outputId": "c3874888-702c-41e0-e801-38647046a492"
+      },
+      "source": [
+        "def my_function(country = \"Norway\"):\n",
+        "  print(\"I am from \" + country)\n",
+        "\n",
+        "my_function(\"Sweden\")\n",
+        "my_function(\"India\")\n",
+        "my_function()\n",
+        "my_function(\"Brazil\")"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "I am from Sweden\n",
+            "I am from India\n",
+            "I am from Norway\n",
+            "I am from Brazil\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "MLFXEuAG--7a",
+        "outputId": "6968e0d4-8990-464b-8004-ffc060897a3d"
+      },
+      "source": [
+        "def my_function(food):\n",
+        "  for x in food:\n",
+        "    print(x)\n",
+        "\n",
+        "fruits = [\"apple\", \"banana\", \"cherry\"]\n",
+        "\n",
+        "my_function(fruits)"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "apple\n",
+            "banana\n",
+            "cherry\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "PvA7ZVUU_B5x",
+        "outputId": "1142698a-d9dc-470b-88b6-6072d775661f"
+      },
+      "source": [
+        "def my_function(x):\n",
+        "  return 5 * x\n",
+        "\n",
+        "print(my_function(3))\n",
+        "print(my_function(5))\n",
+        "print(my_function(9))"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "15\n",
+            "25\n",
+            "45\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
